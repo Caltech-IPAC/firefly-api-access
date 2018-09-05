@@ -1,0 +1,38 @@
+{
+  "name": "firefly-api-access",
+  "version": "0.0.13",
+  "license": "SEE LICENSE IN License.txt",
+  "description": "firefly api access",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Caltech-IPAC/firefly-api-access.git"
+  },
+  "scripts": {
+    "build": "webpack --env build ",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "prepublish": "npm run build"
+  },
+  "main": "distribution/firefly-api-access.min.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0 ",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^4.3.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-jsdoc": "^v3.4.1",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "jsdoc": "^3.5.5",
+    "jsdoc-jsx": "^0.1.0",
+    "uglifyjs-webpack-plugin": "1.2.0",
+    "webpack": "^3.11.0"
+  }
+}
